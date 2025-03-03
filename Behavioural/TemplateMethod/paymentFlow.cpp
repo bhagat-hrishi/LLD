@@ -11,7 +11,7 @@ public:
     virtual void debitAmount() = 0;
     virtual void creditAmount() = 0;
 
-    void sendMoney()
+    void sendMoney() final //because of final keyword child classes cannot override this method now.
     {
         // Template method defining the steps
         validateRequest();
